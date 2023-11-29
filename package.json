@@ -1,6 +1,6 @@
 {
-  "name": "slshptt-2.0",
-  "version": "0.1.0",
+  "name": "slshptt",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -23,5 +23,20 @@
     "tailwindcss": "^3.3.0",
     "eslint": "^8",
     "eslint-config-next": "14.0.3"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slashpotato/slshptt.git"
+  },
+  "keywords": [
+    "next.js"
+  ],
+  "author": "slashpotato",
+  "license": "CC-BY-NC-4.0",
+  "bugs": {
+    "url": "https://github.com/slashpotato/slshptt/issues"
+  },
+  "homepage": "https://github.com/slashpotato/slshptt#readme"
 }
