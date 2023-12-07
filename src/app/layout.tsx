@@ -1,40 +1,31 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from 'next'
-import { Noto_Color_Emoji, Noto_Sans } from 'next/font/google'
-import './globals.css'
 import Link from 'next/link'
-import Image from 'next/image'
-import dynamic from 'next/dynamic'
+import { Geologica } from 'next/font/google'
+import './globals.css'
+import './icons.css'
+import HeaderTitle from '@/components/Header'
 
-const notosans = Noto_Sans({ subsets: ['latin-ext', 'cyrillic-ext'], weight: "500" })
-const notoemoji = Noto_Color_Emoji({ subsets: ['emoji'], weight: "400" })
-
-export const metadata: Metadata = {
-  title: 'slshptt',
-  description: 'slashpotato\'s website',
-}
+const geologica = Geologica({ subsets: ['latin-ext', 'cyrillic-ext'], weight: "500" })
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=optional" />
-      </head>
-      <body className={notosans.className}>
+      <body className={geologica.className}>
         <header id='header' className='Header'>
-          <Link href={'/'} className='fixed'>slshptt</Link>
+          <HeaderTitle/>
           <div className='flex justify-between w-full px-5'>
             <nav className='flex justify-between material-symbols-rounded'>
-              <button className='mr-1 material-symbols-rounded'>extension</button>
-              <button className='mr-1 material-symbols-rounded'>handyman</button>
+              <Link className='mr-1 material-symbols-rounded' href={'/projects'}>extension</Link>
+              <Link className='mr-1 material-symbols-rounded' href={'/tools'}>handyman</Link>
             </nav>
             <nav className='flex justify-between material-symbols-rounded'>
-              <button className='ml-1 material-symbols-rounded'>settings</button>
-              <button className='ml-1 material-symbols-rounded'>apps</button>
+              <Link className='ml-1 material-symbols-rounded' href={'/settings'}>settings</Link>
+              <Link className='ml-1 material-symbols-rounded' href={'/'}>apps</Link>
             </nav>
           </div>
         </header>
-        <div id='content' className='mt-16 w-screen min-h-screen'>
+        <div id='content' className='w-screen min-h-screen'>
           {children}
         </div>
       </body>
