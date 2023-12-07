@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from 'next'
 import { Noto_Color_Emoji, Noto_Sans } from 'next/font/google'
 import './globals.css'
@@ -16,17 +17,20 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=optional" />
+      </head>
       <body className={notosans.className}>
         <header id='header' className='Header'>
           <Link href={'/'} className='fixed'>slshptt</Link>
           <div className='flex justify-between w-full px-5'>
-            <nav className='flex justify-between gap-2'>
-              <button>a</button>
-              <button>b</button>
+            <nav className='flex justify-between material-symbols-rounded'>
+              <button className='mr-1 material-symbols-rounded'>extension</button>
+              <button className='mr-1 material-symbols-rounded'>handyman</button>
             </nav>
-            <nav className='flex justify-between gap-2'>
-              <button>settings</button>
-              <button>b</button>
+            <nav className='flex justify-between material-symbols-rounded'>
+              <button className='ml-1 material-symbols-rounded'>settings</button>
+              <button className='ml-1 material-symbols-rounded'>apps</button>
             </nav>
           </div>
         </header>
