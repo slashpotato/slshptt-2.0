@@ -16,7 +16,8 @@ export default function HeaderTitle() {
 
 	if (text == '/') {
 		text = 'home';
-	} else {
+	}
+	if (text != 'slshptt' && text != 'home') {
 		text = text.substring(1);
 	}
 
