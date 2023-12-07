@@ -4,7 +4,7 @@ type onoff = "on" | "off";
 var isActive: onoff;
 
 if (typeof window !== "undefined" && window.localStorage) {
-	
+	console.log('localStorage succesfully detected')
 }
 
 function specifyIcon(setting: string) {
@@ -40,18 +40,23 @@ function switchSetting(setting: string) {
 }
 
 export default function Setting({ disname, sysname }: { disname: string, sysname: string }) {
-	switch (localStorage.getItem(sysname)) {
-		case 'true':
-			isActive = 'on';
-			break;
-	
-		case 'false':
-			isActive = 'off';
-			break;
+	if (typeof window !== "undefined" && window.localStorage) {
+		console.log('localStorage succesfully detected - element')
+		switch (localStorage.getItem(sysname)) {
+			case 'true':
+				isActive = 'on';
+				break;
 
-		default:
-			isActive = 'off';
-			break;
+			case 'false':
+				isActive = 'off';
+				break;
+
+			default:
+				isActive = 'off';
+				break;
+		}
+	} else {
+		isActive = 'off';
 	}
 
 	return (
