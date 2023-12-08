@@ -31,11 +31,11 @@ export default function Apps() {
 		<button className='ml-1 my-auto' onClick={switchMenu}>
 			apps
 			<div className='fixed h-fit min-h-[10px] bg-stone-800 bg-opacity-50 backdrop-blur-md rounded-2xl transition-all origin-top-right mt-5 w-56 right-0' id='menu' style={{ scale: '0' }}>
-				<ul className='py-2 gap-1'>
-					<App name='Settings' icon='settings' link='/settings' />
-					<App name='Projects' icon='extension' link='/projects' />
-					<App name='Tools' icon='handyman' link='/tools' />
-					<App name='Discord Server' icon='discord' link='https://discord.com/invite/WFaGuxgNPp' />
+				<ul className='p-[0.585rem] gap-[1px] grid'>
+					<App name='Settings' icon='settings' link='/settings' target='_self'/>
+					<App name='Projects' icon='extension' link='/projects' target='_self'/>
+					<App name='Tools' icon='handyman' link='/tools' target='_self'/>
+					<App name='Discord Server' icon='discord' link='https://discord.com/invite/WFaGuxgNPp' target='_blank'/>
 				</ul>
 			</div>
 		</button>

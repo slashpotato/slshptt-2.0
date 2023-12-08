@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Spot Mono";
+  src: url('/fonts/Spot Mono/Spot Mono Medium.ttf');
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -41,4 +46,8 @@ main {
 
 #settings-main-div {
   min-height: calc(100dvh - 4rem) !important;
+}
+
+.overjump {
+  transition: all 200ms cubic-bezier(1, -0.5, 0, 1.5);
 }
