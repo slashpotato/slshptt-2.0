@@ -35,6 +35,7 @@ export default function Apps() {
 					<App name='Settings' icon='settings' link='/settings' />
 					<App name='Projects' icon='extension' link='/projects' />
 					<App name='Tools' icon='handyman' link='/tools' />
+					<App name='Discord Server' icon='discord' link='https://discord.com/invite/WFaGuxgNPp' />
 				</ul>
 			</div>
 			<style jsx>{`

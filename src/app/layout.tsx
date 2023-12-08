@@ -37,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
         <div id='content' className='w-screen min-h-screen'>
           {children}
+          <SpeedInsights/>
         </div>
       </body>
     </html>
