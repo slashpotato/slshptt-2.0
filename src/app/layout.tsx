@@ -5,6 +5,7 @@ import './globals.css'
 import './icons.css'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const Path = dynamic(() => import('@/components/Path'), { ssr: false })
 const Apps = dynamic(() => import('@/components/Apps/AppsMenu'), { ssr: false })
