@@ -1,36 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# slashhub
+This project uses [Next.js](https://nextjs.org/) with [tailwindcss](https://tailwindcss.com). See other dependencies and other info in [`package.json`](https://github.com/slashpotato/slashhub/blob/b4cf2a4a4ea37d1b4717c1dd87ac7b3d4ea8d922/package.json).
 
-## Getting Started
+**Note**: blue text is clickable and is links
 
-First, run the development server:
+[![Discord](https://img.shields.io/discord/1127300288987021376?style=for-the-badge&logo=discord&logoColor=5865f2&label=discord%20server&labelColor=black&color=5865f2&link=https%3A%2F%2Fdsc.gg%2Fslashppotato)](https://dsc.gg/slashpotato)
+[![Website](https://img.shields.io/website?style=for-the-badge&up_message=online&up_color=00d636&down_message=offline&down_color=lightgrey&url=https%3A%2F%2Fslshptt.vercel.app%2F&logo=vercel&logoColor=ffffff&labelColor=black&link=https%3A%2F%2Fslshptt.vercel.app%2F)](https://slshptt.vercel.app/)
+[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCBDiHcT9sfxCNxADZsb_g0g?style=for-the-badge&logo=youtube&logoColor=fe4e45&labelColor=000000&color=fe4e45)](https://www.youtube.com/@slashpotato)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This [website](https://slshptt.vercel.app) is for contributing slashpotato's non-commercial projects.
+## License
+slashhub © 2023 by slashpotato is licensed under [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/)
+## Contact Me
+Mail: <slashpotato@proton.me>
+Discord/Telegramm: @slashpotato
+Discord Server: <https://dsc.gg/slashpotato>
