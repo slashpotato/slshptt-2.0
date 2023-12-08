@@ -30,7 +30,7 @@ export default function Apps() {
 	return (
 		<button className='ml-1 my-auto' onClick={switchMenu}>
 			apps
-			<div className='fixed h-fit min-h-[10px] bg-stone-800 bg-opacity-50 backdrop-blur-md rounded-2xl transition-all origin-top-right mt-5 w-56 right-0' id='menu' style={{ scale: '1' }}>
+			<div className='fixed h-fit min-h-[10px] bg-stone-800 bg-opacity-50 backdrop-blur-md rounded-2xl transition-all origin-top-right mt-5 w-56 right-0' id='menu' style={{ scale: '0' }}>
 				<ul className='py-2 gap-1'>
 					<App name='Settings' icon='settings' link='/settings' />
 					<App name='Projects' icon='extension' link='/projects' />
