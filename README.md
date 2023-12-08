@@ -1,5 +1,5 @@
 # slashhub
-This project uses [Next.js](https://nextjs.org/) with [tailwindcss](https://tailwindcss.com). See other dependencies and other info in [`package.json`](https://github.com/slashpotato/slashhub/blob/b4cf2a4a4ea37d1b4717c1dd87ac7b3d4ea8d922/package.json).
+This project uses [Next.js](https://nextjs.org/) with [tailwindcss](https://tailwindcss.com) and [typescript](https://www.typescriptlang.org/) and hosted on [Vercel](https://github.com/slashpotato/slshptt-2.0/blob/c26193e8254c6bc9701a500792c78e063ede200f/package.json). See other dependencies and other info in [`package.json`](https://github.com/slashpotato/slshptt-2.0/blob/c26193e8254c6bc9701a500792c78e063ede200f/package.json).
 
 **Note**: blue text is clickable and is links
 
@@ -8,7 +8,7 @@ This project uses [Next.js](https://nextjs.org/) with [tailwindcss](https://tail
 [![Website](https://img.shields.io/website?style=for-the-badge&up_message=online&up_color=00d636&down_message=offline&down_color=lightgrey&url=https%3A%2F%2Fslshptt.vercel.app%2F&logo=vercel&logoColor=ffffff&labelColor=black&link=https%3A%2F%2Fslshptt.vercel.app%2F)](https://slshptt.vercel.app/)
 
 
-This [website](https://slshptt.vercel.app) is for contributing slashpotato's non-commercial projects.
+This [website](https://slshptt.vercel.app) is for contributing slashpotato's non-commercial projects and other information.
 ## License
 slashhub © 2023 by slashpotato is licensed under [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/)
 ## Contact Me
