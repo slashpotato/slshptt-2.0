@@ -28,16 +28,18 @@ export default function Apps() {
 	const width = 210
 
 	return (
-		<button className='ml-1 my-auto' onClick={switchMenu}>
-			apps
+		<span className='ml-1 my-auto'>
+			<button onClick={switchMenu}>
+				apps
+			</button>
 			<div className='fixed h-fit min-h-[10px] bg-stone-800 bg-opacity-50 backdrop-blur-md rounded-2xl transition-all origin-top-right mt-5 w-56 right-0' id='menu' style={{ scale: '0' }}>
 				<ul className='p-[0.585rem] gap-[1px] grid'>
-					<App name='Settings' icon='settings' link='/settings' target='_self'/>
-					<App name='Projects' icon='extension' link='/projects' target='_self'/>
-					<App name='Tools' icon='handyman' link='/tools' target='_self'/>
-					<App name='Discord Server' icon='discord' link='https://discord.com/invite/WFaGuxgNPp' target='_blank'/>
+					<App name='Settings' icon='settings' link='/settings' target='_self' />
+					<App name='Projects' icon='extension' link='/projects' target='_self' />
+					<App name='Tools' icon='handyman' link='/tools' target='_self' />
+					<App name='Discord Server' icon='discord' link='https://discord.com/invite/WFaGuxgNPp' target='_blank' />
 				</ul>
 			</div>
-		</button>
+		</span>
 	)
 }
