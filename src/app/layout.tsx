@@ -19,6 +19,15 @@ const geologica = Geologica({ subsets: ['latin-ext', 'cyrillic-ext'], weight: "5
 export const metadata: Metadata = {
   title: 'slshptt',
   description: 'slashpotato\'s website',
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon1024.png',
+    apple: '/icon1024.png',
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: '/icon1024.png',
+    },
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -35,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </nav>
             <nav className='inline-flex flex-row justify-between items-center material-symbols-rounded w-max'>
               <Link className='ml-1 my-auto interactive' href={'/settings'}>settings</Link>
-              <Apps/>
+              <Apps />
             </nav>
           </div>
         </header>
