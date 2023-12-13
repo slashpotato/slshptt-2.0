@@ -32,7 +32,7 @@ export default function Apps() {
 			<button onClick={switchMenu}>
 				apps
 			</button>
-			<div className='fixed h-fit min-h-[10px] bg-stone-800 bg-opacity-50 backdrop-blur-md rounded-2xl transition-all origin-top-right mt-5 w-56 right-0' id='menu' style={{ scale: '0' }}>
+			<div className='fixed h-fit min-h-[10px] bg-stone-300 dark:bg-stone-800 bg-opacity-50 backdrop-blur-md rounded-2xl transition-all origin-top-right mt-5 w-56 right-0' id='menu' style={{ scale: '0' }}>
 				<ul className='p-[0.585rem] gap-[1px] grid'>
 					<App name='Settings' icon='settings' link='/settings' target='_self' />
 					<App name='Projects' icon='extension' link='/projects' target='_self' />

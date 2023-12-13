@@ -14,6 +14,6 @@ export default function Path() {
 	}
 
 	return (
-		<span id='path' className={geologica.className + ' text-stone-600 text-lg absolute ml-1 top-0 items-center justify-center inline-flex h-full'}>{text}</span>
+		<span id='path' className={geologica.className + ' text-stone-500 dark:text-stone-600 text-lg absolute ml-1 top-0 items-center justify-center inline-flex h-full'}>{text}</span>
 	)
 }

@@ -7,7 +7,7 @@ type target = '_blank' | '_parent' | '_self' | '_top'
 
 export default function App({ name, icon, link, target }: { name: string, icon: any, link: string, target: target }) {
 	if (icon == 'discord') {
-		icon = <Image src={'/icons/discord-mark-white.svg'} alt={''} width={24} height={24}/>
+		icon = <Image src={'/icons/discord-mark-white.svg'} alt={''} width={24} height={24} className='invert dark:invert-0 transition-all duration-600 delay-200' style={{ transitionTimingFunction: 'cubic-bezier(0.4, 0, 1, 1);'}}/>
 	}
 	
 	return (
