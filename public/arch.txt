@@ -1,0 +1,14 @@
+sudo pacman -Syu
+yes | sudo pacman -Sy --needed git neofetch zsh sl figlet yes cowsay tty-clock pipes.sh curl wget busybox openssh toilet fortune cmatrix caca-utils bb htop bpytop cava tmux find grep lolcat fish tldr reflector xorg bluez blueman bluez-utils p7zip unrar tar rsync exfat-utils fuse-exfat ntfs-3g flac jasper aria2 jdk-openjdk python3 amd-ucode base-devel flatpak vlc gimp linux-lts linux-lts-headers linux-hardened linux-hardened-headers linux-zen linux-zen-headers gnome gnome-extra
+sudo modprobe btusb
+sudo systemctl enable bluetooth && sudo systemctl start bluetooth
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --verbose --country 'Russia' -l 5 --sort rate --save /etc/pacman.d/mirrorlist
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+cd ~ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd ~
+yay -Ss vscode && yay -S visual-studio-code-bin preload 
+sudo systemctl enable preload && sudo systemctl start preload
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cd ~ && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+sudo ufw deny 22/tcp
