@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={geologica.className}>
-        <header id='header' className='Header backdrop-blur-md'>
+        <header id='header' className='Header bg-opacity-50'>
           <Link className='fixed' href='/'>slshptt</Link>
           <div className='flex justify-between items-center w-full h-full px-5'>
             <nav className='inline-flex flex-row justify-between items-center material-symbols-rounded w-max'>

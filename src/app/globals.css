@@ -41,7 +41,7 @@ main {
 
 .Header {
   width: calc(100dvw - 0.75rem - 0.75rem);
-  @apply h-12 grow max-w-full m-3 bg-stone-300 dark:bg-stone-800 bg-opacity-50 fixed top-0 rounded-2xl text-center items-center justify-center flex
+  @apply h-12 grow max-w-full m-3 bg-stone-300 dark:bg-stone-800 backdrop-blur-md bg-opacity-50 dark:bg-opacity-50 fixed top-0 rounded-2xl text-center items-center justify-center flex
 }
 
 #settings-main-div {
